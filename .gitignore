@@ -2,5 +2,4 @@
 *.py[cod]
 .web
 __pycache__/
-.venv/lib/python3.10/site-packages/httpcore/_backends/trio.py
 /.venv

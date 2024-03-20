@@ -13,7 +13,7 @@ def navbar() -> rx.Component:
             font_family=Font.LOGO.value,
             font_size=styles.Size.LARGE.value,
         ),
-        href="index"
+        href="https://lucasgdlsdev.reflex.run/"
         ),
         position="sticky",
         bg="lightgray",

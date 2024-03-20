@@ -8,7 +8,7 @@ from link_bio.styles.fonts import Font as Font
 def footer() -> rx.Component:
     return rx.vstack(
         #rx.image(src="favicon.ico"),
-        rx.text(f"2022-{datetime.date.today().year} ,Building Sotfware from Argentina♥"),
+        rx.text(f"2022-{datetime.date.today().year} Building Sotfware from Argentina♥"),
         rx.text("Creado con Reflex by LucasGDLS"),
         color=TextColor.FOOTER.value,
         height="100%",

@@ -11,6 +11,7 @@ from link_bio.styles.fonts import Font as Font
 from link_bio.styles.colors import TextColor as TextColor
 
 
+
 class State(rx.State):
     pass
 def index():
@@ -49,32 +50,15 @@ def aboutme():
     )
 
 def misprojectos():
-    return rx.box(
+    return rx.flex(
         navbar(),
-        rx.center(
-            rx.vstack(           
-                rx.text("Proximamente..", size="9", color= TextColor.HEADER.value, font_family= Font.TITLE.value,width="100%",height="474px", text_align="center",padding="50px"),
-                
-            ),
-        ),
+        rx.text("Proximamente..", size="8", color= TextColor.HEADER.value, font_family= Font.TITLE.value,width="100%",height="483px", text_align="center",padding="50px"),
         footer(),
         width="100%",
-        height="100%",
+        direction="column",
+        spacing="3",
     )
 
-def contactame():
-    return rx.box(
-        navbar(),
-        rx.center(
-            rx.vstack(           
-                rx.text("Proximamente..", size="9", color= TextColor.HEADER.value, font_family= Font.TITLE.value,width="100%",height="474px", text_align="center",padding="50px"),
-                
-            ),
-        ),
-        footer(),
-        width="100%",
-        height="100%",
-    )
 
 
 
@@ -84,4 +68,3 @@ app = rx.App(
 app.add_page(index)
 app.add_page(aboutme)
 app.add_page(misprojectos)
-app.add_page(contactame)

@@ -2,7 +2,7 @@ import reflex as rx
 import link_bio.styles.styles as styles
 
 
-def link_button(title : str,body: str, url:str,alt:str ) -> rx.Component:
+def link_button(title : str,body: str, url:str ) -> rx.Component:
     return rx.link(
         rx.button(
             rx.hstack(
@@ -11,6 +11,7 @@ def link_button(title : str,body: str, url:str,alt:str ) -> rx.Component:
                     margin_top="-0.8em",
                     width=styles.Size.BIG.value,
                     heigth=styles.Size.BIG.value,
+                    alt=title
                     #margin=styles.Size.MEDIUM.value
 
                 ),
